@@ -17,56 +17,118 @@ html {
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
-#header {
-    width: 100%;
-    height: 100%;
-    background: url("../img/asian_alley.jpg") no-repeat center center fixed ;
-    /*z-index: -100;*/
-    background-size: cover;
-  }
-
-.color-overlay {
-/*  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;*/
-  /*z-index: 1;*/
-  /*background: url('../img/pixelated_layer.png') top left repeat;*/
-  background-color: rgba(0, 0, 0, 0.55);
-  width: 100%;
-  height: 100%;
-}
-
-/*.title {
-  position: relative;
-  font-family: 'Lobster', cursive;
-  color: white;
-  font-size: 5rem;
-  margin: auto;
-  text-align: center;
-  margin-top: 30%;
-}*/
-
 .section {
   width: 100%;
   height: 100%;
 }
 
+
+#home {
+  text-align: center;
+  background: url('../images/city_daytime.gif') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#home h1{
+  font-family: Lobster;
+  color:white;
+  margin-top: 20%;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url('../images/pixelated_layer.png') repeat top left fixed;
+}
+
 #about {
-  background: #02C1C1;
+  background: black;
+  height: 30%;
 }
 
 #portfolio {
-  background: #FB4644;
-
+  background: black;
 }
+
+
+#project-container{
+  background-color: #CCCCCC;
+  position: relative;
+  margin: auto;
+  top: 9rem;
+  height: 30rem;
+}
+
+#top-row{
+  /*background-color: blue;*/
+  top: 2rem;
+}
+
+#bottom-row{
+  /*background-color: red;*/
+  top: 4rem;
+}
+
+#top-row, #bottom-row{
+  position: relative;
+  margin: auto;
+  height: 40%;
+  width: 45rem;
+}
+
+#one, #four{
+  background-color: white;
+  left: 0;
+}
+
+#two, #five{
+  background-color: white;
+  left: 16rem;
+}
+
+#three, #six{
+  background-color: white;
+  right: 0;
+}
+
+.project-grid{
+  position: absolute;
+  height: 100%;
+  width: 13rem;
+}
+
+/*#one, #four{
+  display: inline;
+  background-color: white;
+  position: relative;
+  left: 3rem;
+  height: 100%;
+  width: 20%;
+}*/
+
+
+
+
+
+
 #resume {
   background: #FB4644;
 }
+
 #contact {
-  background: #262E3D;
+  position: absolute;
+  z-index: -99;
+  background: url('../images/coffee_desk.gif') no-repeat center center fixed;
+  background-size: cover;
 }
+
 
 .navbar {
   width: 100%;
