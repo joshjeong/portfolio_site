@@ -1,0 +1,114 @@
+@media (min-width: 761px) {
+
+  #contact {
+    position: absolute;
+    background: url('../images/coffee_desk.gif') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  #project-container{
+    background-color: #CCCCCC;
+    position: relative;
+    margin: auto;
+    top: 6rem;
+    height: 28rem;
+  }
+
+  #top-row{
+    top: 20%;
+    position: relative;
+    margin: auto;
+    height: 80%;
+    width: 70rem;
+  }
+  #one, #four{
+    left: 0;
+  }
+
+  #two, #five{
+    left: 33.33%;
+  }
+
+  #three, #six{
+    right: 0;
+  }
+
+  .project-grid{
+    position: absolute;
+    height: 100%;
+    width: 33.33%;
+  }
+
+  .nav-item {
+    display: inline-block;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    z-index: 2
+  }
+
+  .navbar-right, .navbar-left {
+    text-align: center;
+    display: inline;
+    position: fixed;
+  }
+
+  .navbar-right {
+    width: 37%;
+    right: 0;
+    margin-top: 2%;
+  }
+
+  .navbar-left {
+    width: 18%;
+    left: 0;
+    margin-top: 2%;
+
+  }
+
+  .nav-link {
+    display: inline;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    top: 1rem;
+  }
+
+
+  .nav-link a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+
+  .navbar-right a:after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #73665d;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+    background: #fff;
+  }
+
+  .navbar-right a:hover:after {
+    height: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+
+
+}
