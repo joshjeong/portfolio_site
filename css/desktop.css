@@ -100,6 +100,7 @@
     -moz-transform: translateY(-10px);
     transform: translateY(-10px);
     background: #fff;
+    top: 110%
   }
 
   .navbar-right a:hover:after {
