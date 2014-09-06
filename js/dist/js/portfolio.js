@@ -3,6 +3,7 @@ $(document).on('ready', function () {
   var controller = new Controller(view)
   controller.scrollTo();
   controller.bindListeners();
+  view.animateArrow();
 })
 
 
@@ -35,12 +36,25 @@ var Controller = function(view){
   }
 
   this.bindListeners= function(){
-    this.hoverListener();
+    this.louderListener();
+    this.ledgerListener();
   }
 
-  this.hoverListener= function(){
+  this.louderListener= function(){
     $('#louder').on('mouseover', function(){
-      self.view.showDetails($(this))
+      self.view.showLouder($(this))
+    });
+    $('#louder').on('mouseout', function(){
+      self.view.hideLouder($(this))
+    })
+  }
+
+  this.ledgerListener= function(){
+    $('#ledger').on('mouseover', function(){
+      self.view.showLedger($(this))
+    });
+    $('#ledger').on('mouseout', function(){
+      self.view.hideLedger($(this))
     })
   }
 
@@ -48,10 +62,29 @@ var Controller = function(view){
 }
 
 var View = function(){
-  this.showDetails = function(div){
-    console.log('hi')
+  this.animateArrow= function(){
+    console.log('bounce')
+    $('#arrow').animate('bounce', {times: 5}, 300);
+  };
+
+  this.showLouder = function(div){
     $('.louder-overlay').slideDown("slow")
+    $('#louder-caption').show()
   }
+  this.hideLouder = function(div){
+    $('.louder-overlay').slideUp("slow")
+    $('#louder-caption').hide()
+  }
+  this.showLedger = function(div){
+    $('.ledger-overlay').slideDown("slow")
+    $('#ledger-caption').show()
+  }
+  this.hideLedger = function(div){
+    $('.ledger-overlay').slideUp("slow")
+    $('#ledger-caption').hide()
+  }
+
+
 }
 
 

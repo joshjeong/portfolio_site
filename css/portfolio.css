@@ -21,6 +21,7 @@ html {
 .section {
   width: 100%;
   height: 100%;
+  text-align: center;
 }
 
 
@@ -71,8 +72,6 @@ html {
 /*#bottom-row{
   top: 4rem;
 }*/
-
-
 
 
 /*#top-row, #bottom-row{
