@@ -21,15 +21,26 @@
     height: 15rem;
     width: 70rem;
   }
-  #one, #four{
+
+  .louder-overlay {
+   height: 100%;
+   z-index: 1;
+   background: url('../images/speaker.png');
+   background-size: cover;
+   background-color: white;
+   display: none;
+  }
+
+
+  #playlisten, #four{
     left: 0;
   }
 
-  #two, #five{
+  #louder, #five{
     left: 33.33%;
   }
 
-  #three, #six{
+  #ledger, #six{
     right: 0;
   }
 

@@ -83,17 +83,17 @@ html {
 }
 */
 
-#one{
+#playlisten{
   background: url('../images/playlisten.png') no-repeat;
   background-size: 100%;
 }
 
-#two{
+#louder{
   background: url('../images/louder.png') no-repeat;
   background-size: 100%;
 }
 
-#three{
+#ledger{
   background: url('../images/ledger.png') no-repeat;
   background-size: 100%;
 }
