@@ -34,13 +34,20 @@
   .louder-overlay {
    height: 100%;
    z-index: 1;
-   background: url('../images/speaker.png');
-   background-size: cover;
    display: none;
-   border: 5px solid #232B3B;
    box-sizing: border-box;
-   background-color: #CCCCCC;
   }
+
+  #louder-overlay1{
+    background: url('../images/louder1.png');
+    background-size: cover;
+  }
+
+  #louder-overlay2{
+    background: url('../images/louder2.png');
+    background-size: cover;
+  }
+
 
   #ledger-overlay1{
     background: url('../images/ledger1.png');
@@ -52,12 +59,32 @@
     background-size: cover;
   }
 
+  #playlisten-overlay1{
+    background: url('../images/playlisten2.png');
+    background-size: cover;
+  }
+
+  #playlisten-overlay2{
+    background: url('../images/playlisten1.png');
+    background-size: cover;
+  }
+
   .ledger-overlay{
     height: 100%;
     z-index: 1;
     display: none;
     box-sizing: border-box;
   }
+
+
+
+  .playlisten-overlay{
+    height: 100%;
+    z-index: 1;
+    display: none;
+    box-sizing: border-box;
+  }
+
 
   .caption{
     display: none;

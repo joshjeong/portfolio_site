@@ -38,6 +38,7 @@ var Controller = function(view){
   this.bindListeners= function(){
     this.louderListener();
     this.ledgerListener();
+    this.playlistenListener();
   }
 
   this.louderListener= function(){
@@ -55,6 +56,15 @@ var Controller = function(view){
     });
     $('#ledger').on('mouseout', function(){
       self.view.hideLedger($(this))
+    })
+  }
+
+  this.playlistenListener= function(){
+    $('#playlisten').on('mouseover', function(){
+      self.view.showPlaylisten($(this))
+    });
+    $('#playlisten').on('mouseout', function(){
+      self.view.hidePlaylisten($(this))
     })
   }
 
@@ -82,6 +92,14 @@ var View = function(){
   this.hideLedger = function(div){
     $('.ledger-overlay').slideUp("slow")
     $('#ledger-caption').hide()
+  }
+  this.showPlaylisten = function(div){
+    $('.playlisten-overlay').slideDown("slow")
+    $('#playlisten-caption').show()
+  }
+  this.hidePlaylisten = function(div){
+    $('.playlisten-overlay').slideUp("slow")
+    $('#playlisten-caption').hide()
   }
 
 
