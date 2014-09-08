@@ -8,7 +8,6 @@
     background-color: #343434;
     height: 20rem;
     width: 50%;
-    /*border-radius: */
   }
 
 
@@ -35,11 +34,11 @@
   }
 
 
-  #playlisten, #four{
+  #playlisten{
     left: 0;
   }
 
-  #louder, #five{
+  #louder{
     left: 33.33%;
   }
 
@@ -108,7 +107,7 @@
     bottom: -6rem;
   }
 
-  #ledger, #six{
+  #ledger{
     right: 0;
   }
 
@@ -144,16 +143,12 @@
 
   .navbar-left {
     margin-left: 8rem;
-    /*width: 40rem;*/
     left: 0;
-    /*width: 100%;*/
-    /*margin:auto;*/
     margin-top: 1.2rem;
   }
 
   .navbar-right {
     margin-right: 8rem;
-    /*width: 11rem;*/
     right: 0;
     margin-top: 1rem;
 
@@ -240,7 +235,7 @@
   }
 
 
-/*BOUNCE EFFECT*/
+/*BOUNCE EFFECT-----------------------*/
   @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
