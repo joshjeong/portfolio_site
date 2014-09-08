@@ -5,15 +5,17 @@ $(document).on('ready', function () {
   controller.bindListeners();
   view.animateArrow();
   if ($('#twitter').css('background-color')== "rgba(0, 0, 0, 0)"){
-     var s = skrollr.init();
+     var s = skrollr.init({
+            render: function(data){
+              console.log(data.curTop)
+            }
+     });
   }
 
 })
 
 
-  // <script type="text/javascript">
-  //    var s = skrollr.init();
-  // </script>
+
 
 
 var Controller = function(view){
