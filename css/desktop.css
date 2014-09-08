@@ -1,13 +1,11 @@
 @media (min-width: 761px) {
 
+  #home {
+    height: 40%;
+  }
 
-  #about-container{
-    position: relative;
-    margin: auto;
-    top: 14rem;
-    background-color: #343434;
-    height: 20rem;
-    width: 50%;
+  #about {
+    height: 20%;
   }
 
 
