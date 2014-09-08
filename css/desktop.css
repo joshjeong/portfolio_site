@@ -1,5 +1,17 @@
 @media (min-width: 761px) {
 
+
+  #about-container{
+    position: relative;
+    margin: auto;
+    top: 14rem;
+    background-color: #343434;
+    height: 20rem;
+    width: 50%;
+    /*border-radius: */
+  }
+
+
   #contact {
     position: absolute;
     background: url('../images/laptop_desk_color.gif') no-repeat center center fixed;

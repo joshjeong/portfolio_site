@@ -4,7 +4,16 @@ $(document).on('ready', function () {
   controller.scrollTo();
   controller.bindListeners();
   view.animateArrow();
+  if ($('#twitter').css('background-color')== "rgba(0, 0, 0, 0)"){
+     var s = skrollr.init();
+  }
+
 })
+
+
+  // <script type="text/javascript">
+  //    var s = skrollr.init();
+  // </script>
 
 
 var Controller = function(view){
@@ -73,7 +82,6 @@ var Controller = function(view){
 
 var View = function(){
   this.animateArrow= function(){
-    console.log('bounce')
     $('#arrow').animate('bounce', {times: 5}, 300);
   };
 

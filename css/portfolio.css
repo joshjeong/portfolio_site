@@ -57,18 +57,11 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;*/
+  background-color: white;
   height: 100%;
 }
 
-#about-container{
-  position: relative;
-  margin: auto;
-  top: 14rem;
-  background-color: #343434;
-  height: 20rem;
-  width: 50%;
-  /*border-radius: */
-}
+
 
 #portfolio {
   background: #343434;
