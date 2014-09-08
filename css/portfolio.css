@@ -3,16 +3,12 @@
 @import url(http://fonts.googleapis.com/css?family=Righteous);
 
 html {
-  /*font-family: 'lane', sans-serif;*/
   font-family: 'Lato', sans-serif;
   font-weight: 100;
 
 }
 
-  /**{
-    border: 1px solid red;
-  }
-*/
+
 @font-face {
   font-family: lane;
   src:url(../lane.ttf);
@@ -28,16 +24,18 @@ html {
 #home {
   text-align: center;
   background: url('../images/city_daytime.gif') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  width: 100%;
+  height: 31%;
 }
 
-#home h1{
+#name-title{
   font-family: Lobster;
   color:white;
-  margin-top: 20%;
+  position: relative;
+  top: 20rem;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 
 /*.color-overlay {
@@ -51,12 +49,7 @@ html {
 }*/
 
 #about {
-  /*background: url('../images/wood.jpg') no-repeat center center fixed;*/
-/*  background-color: transparent;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
+
   background-color: white;
   height: 100%;
 }
@@ -67,23 +60,6 @@ html {
   background: #343434;
 }
 
-/*
-#top-row{
-  top: 3rem;
-}*/
-
-/*#bottom-row{
-  top: 4rem;
-}*/
-
-
-/*#top-row, #bottom-row{
-  position: relative;
-  margin: auto;
-  height: 40%;
-  width: 53rem;
-}
-*/
 
 #playlisten{
   background: url('../images/playlisten.png') no-repeat;
@@ -99,12 +75,6 @@ html {
   background: url('../images/ledger.png') no-repeat;
   background-size: 100%;
 }
-
-
-/*#four{
-  background: url('../images/kanban.png');
-  background-size: 100%;
-}*/
 
 .nav-logo {
   text-decoration: none;
