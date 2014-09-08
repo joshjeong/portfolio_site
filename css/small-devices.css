@@ -30,7 +30,10 @@
     height: 2rem;
     position: fixed;
     z-index: 2;
-    background-color: black;
+    background-color: #343434;
+    box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+    -webkit-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
+    -moz-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
   }
 
   .navbar-right, .navbar-left {
