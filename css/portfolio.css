@@ -52,12 +52,22 @@ html {
 
 #about {
   /*background: url('../images/wood.jpg') no-repeat center center fixed;*/
-  background-color: black;
+/*  background-color: transparent;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
   height: 100%;
+}
+
+#about-container{
+  position: relative;
+  margin: auto;
+  top: 14rem;
+  background-color: #343434;
+  height: 20rem;
+  width: 50%;
+  /*border-radius: */
 }
 
 #portfolio {
