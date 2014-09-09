@@ -38,50 +38,56 @@
 
   </div>
 
-<section class="section" id = "home">
-      <!-- <h1>( JoshJeong )</h1> -->
+<section id = "home"         
+        data-0-start="background-position: 50% -100px;"
+        data-250-end="background-position: 50% 0px;">
+  <h1 id='name-title'
+      data-0-top="opacity: 0"
+      data-280-top="opacity: 1"> 
+    JJ
+  </h1>
 </section>
 
-  <section class = "section" id = "about">
-    <div id="about-container">
-    </div>
+  <section class = "section" id = "quote">
+    <h1 id ="quote-content">"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+    </h1>
+    <h6>Martin Fowler</h6>
   </section>
-  <section class = "section" id = "portfolio">
+  <section class = "section" id = "portfolio"
+        data-0-start="background-position: 50% 100px;"
+        data-250-end="background-position: 50% -100px;">
     <div id = "project-container">
-      <div id="top-row">
-        <div class = "project-grid" id = "playlisten">
-            <div class ="louder-overlay" id = "louder-overlay1">
-            </div>
-            <div class="ledger-overlay" id ="ledger-overlay1">
-            </div>
+      <div class = "project-grid" id = "playlisten" 
+          data-0-top="background-position: 900px 10%; opacity: 0"
+          data-120-end="background-position: 0px 10%; opacity: 1">
+  <!--       <div class ="louder-overlay" id = "louder-overlay1">
         </div>
-        <div class = "project-grid" id = "louder">
-            <div class ="playlisten-overlay" id = "playlisten-overlay1">
-            </div>
-            <div class="ledger-overlay" id ="ledger-overlay2">
-            </div>
-        </div>
-        <div class = "project-grid" id = "ledger">
-            <div class ="louder-overlay" id = "louder-overlay2">
-            </div>
-            <div class ="playlisten-overlay" id = "playlisten-overlay2">
-            </div>
-        </div>
+        <div class="ledger-overlay" id ="ledger-overlay1">
+        </div> -->
       </div>
-      <h1 class="caption" id="louder-caption">
+      <div class = "project-grid" id = "louder"
+          data--100-top="background-position: 900px 10%; opacity: 0"
+          data--300-end="background-position: 0px 10%; opacity: 1">
+        <!-- <div class ="playlisten-overlay" id = "playlisten-overlay1">
+        </div>
+        <div class="ledger-overlay" id ="ledger-overlay2">
+        </div> -->
+      </div>
+      <div class = "project-grid" id = "ledger"
+          data--300-top="background-position: 900px 10%; opacity: 0"
+          data--800-end="background-position: 0px 10%; opacity: 1">
+<!--         <div class ="louder-overlay" id = "louder-overlay2">
+        </div>
+        <div class ="playlisten-overlay" id = "playlisten-overlay2">
+        </div> -->
+      </div>
+<!--       <h1 class="caption" id="louder-caption">
         Louder is a full javascript app using web sockets that allows users to connect multiple devices in order to amplify music.
       </h1>
       <h1 class="caption" id="ledger-caption">
         Rails back end and mobile first web app that keeps track of purchases and generates analyses of expenditure breakdown.
-      </h1>
-      <!-- <div id="bottom-row">
-        <div class = "project-grid" id = "four">
-        </div>
-        <div class = "project-grid" id = "five">
-        </div>
-        <div class = "project-grid" id = "six">
-        </div>
-      </div> -->
+      </h1> -->
+
     </div>
   </section>
   <section class = "section" id = "contact"> 
@@ -98,11 +104,8 @@
     </div> -->
   </section>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="js/dist/js/portfolio.js"></script>
   <script type="text/javascript" src="js/skrollr-master/dist/skrollr.min.js"></script>
-  <script type="text/javascript">
-  //   smoothScroll.init();
-     var s = skrollr.init();
-  </script>
+  <script type="text/javascript" src="js/dist/js/portfolio.js"></script>
+
 </body>
 </html>
