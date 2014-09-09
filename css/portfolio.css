@@ -52,11 +52,11 @@ html {
   width: 100%;
 }
 
-#about {
+#quote {
   background-color: white;
 }
 
-#about-content{
+#quote-content{
   font-family: Righteous;
   color: #333333;
   font-size: 2rem;
@@ -76,17 +76,17 @@ html {
 
 #playlisten{
   background: url('../images/playlisten.png') no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #louder{
   background: url('../images/louder.png') no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #ledger{
   background: url('../images/ledger.png') no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .nav-logo {
