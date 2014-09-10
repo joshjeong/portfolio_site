@@ -1,11 +1,16 @@
 @media (min-width: 761px) {
 
   #home {
-    height: 35%;
+    height: 40%;
+  }
+
+  #name-title{
+    left: 43%;
+    position: fixed;
   }
 
   #quote {
-    height: 5%;
+    height: 3.5%;
   }
 
 
@@ -20,7 +25,7 @@
   }
 
   #about {
-    height: 50%;
+    height: 48%;
   }
 
   #about-content{
@@ -126,7 +131,7 @@
     height: 15rem;
   }
 
-  .louder-overlay {
+  /*.louder-overlay {
    height: 100%;
    z-index: 1;
    display: none;
@@ -169,17 +174,17 @@
     z-index: 1;
     display: none;
     box-sizing: border-box;
-  }
+  }*/
 
 
-
+/*
   .playlisten-overlay{
     height: 100%;
     z-index: 1;
     display: none;
     box-sizing: border-box;
   }
-
+*/
 
   .caption{
     display: none;

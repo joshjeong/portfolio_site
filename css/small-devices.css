@@ -4,6 +4,11 @@
     height: 100%;
   }
 
+  #name-title{
+    position: relative;
+    margin: auto;
+  }
+
   #quote {
     height: 100%;
   }
