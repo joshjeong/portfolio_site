@@ -12,9 +12,63 @@
     width: 25rem;
   }
 
+  #about {
+    height: 50%;
+  }
+
+/*  .color-overlay {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.6);
+  }*/
+
+.curtainContainer {
+    width: 100%; height: 100%;
+    position: relative;
+}
+.curtainContainer .curtain {
+    width: 300%; 
+    height: 1px;
+    background-color: #000000;
+    position: absolute; 
+    top: 25%; 
+    left: 0;
+    opacity: 0
+}
+.curtainContainer .copy {
+    position: absolute;
+    bottom: 30%; 
+    left: 0;
+    width: 100%; 
+    text-align: center;
+}
+
+
+/*  .curtainContainer {
+    width: 100%; height: 100%;
+    position: relative;
+  }
+  .curtainContainer .curtain {
+      width: 300%; 
+      height: 1px;
+      background-color: #000000;
+      position: relative; 
+      top: 25%; 
+      left: 0;
+      opacity: 0
+  }
+  .curtainContainer .copy {
+      position: relative;
+      bottom: 30%; left: 0;
+      width: 100%; text-align: center;
+  }*/
+
   #portfolio{
-    background: url('https://s3.amazonaws.com/ooomf-com-files/xKNCBEgSTUGbgBoYgJ90_Skyline.jpg') no-repeat center center fixed;
-    background-size: cover;
+    /*background-color: #343434;*/
     height: 65%;
   }
 
