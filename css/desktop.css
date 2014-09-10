@@ -1,11 +1,23 @@
 @media (min-width: 761px) {
 
   #home {
-    height: 35%;
+    height: 40%;
+  }
+
+  #name-title{
+    left: 43%;
+    position: fixed;
   }
 
   #quote {
-    height: 5%;
+    height: 3.5%;
+  }
+
+
+  #quote-content{
+    font-size: 2rem;
+    width: 80rem;
+    margin-top: 5rem;
   }
 
   #quote h6{
@@ -13,25 +25,21 @@
   }
 
   #about {
-    height: 50%;
+    height: 48%;
   }
 
-/*  .color-overlay {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: rgba(0,0,0,0.6);
-  }*/
+  #about-content{
+    top: 60rem;
+    padding-top: 20rem;
+  }
 
 .curtainContainer {
-    width: 100%; height: 100%;
+    width: 100%; 
+    height: 100%;
     position: relative;
 }
 .curtainContainer .curtain {
-    width: 300%; 
+    width: 100%; 
     height: 1px;
     background-color: #000000;
     position: absolute; 
@@ -47,28 +55,7 @@
     text-align: center;
 }
 
-
-/*  .curtainContainer {
-    width: 100%; height: 100%;
-    position: relative;
-  }
-  .curtainContainer .curtain {
-      width: 300%; 
-      height: 1px;
-      background-color: #000000;
-      position: relative; 
-      top: 25%; 
-      left: 0;
-      opacity: 0
-  }
-  .curtainContainer .copy {
-      position: relative;
-      bottom: 30%; left: 0;
-      width: 100%; text-align: center;
-  }*/
-
   #portfolio{
-    /*background-color: #343434;*/
     height: 65%;
   }
 
@@ -81,12 +68,11 @@
 
 
   #project-container{
-    /*background-color: lightblue;*/
-    /*margin: auto;*/
-    padding-top: 30rem;
-    top: 9rem;
+    /*padding-top: 30rem;*/
+    /*top: 9rem;*/
     width: 100%;
-    height: 100%;
+    height: 20rem;
+    background-color: blue
   }
 
 /*  #top-row{
@@ -99,19 +85,25 @@
 
 
   #playlisten{
-    position: relative;
-    left: 10rem;
+    /*position: relative;*/
+    /*left: 10rem;*/
     width: 22rem;
     height: 15rem;
   }
 
   #louder{
-    position: absolute;
-    margin-top: 15rem;
-    margin-left: 10rem;
+    /*position: relative;*/
     width: 22rem;
     height: 15rem;
   }
+
+
+  #ledger{
+    /*position: relative;*/
+    width: 22rem;
+    height: 15rem;
+  }
+
 
   .louder-overlay {
    height: 100%;
@@ -168,6 +160,7 @@
   }
 
 
+
   .caption{
     display: none;
     position: relative;
@@ -177,22 +170,13 @@
     margin: auto;
     bottom: -6rem;
   }
-
-  #ledger{
-    position: absolute;
-    margin-top: 46rem;
-    margin-left: 10rem;
-    width: 22rem;
-    height: 15rem;
-  }
-  }
+  
 
   .project-grid{
-    display: block;
-    position: absolute;
-    height: 30%;
+    /*display: inline;*/
+    /*position: absolute;*/
+    height: 50%;
     width: 100%
-    
   }
 
   .nav-item {
