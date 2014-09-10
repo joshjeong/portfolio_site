@@ -33,16 +33,6 @@
     padding-top: 20rem;
   }
 
-/*  .color-overlay {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: rgba(0,0,0,0.6);
-  }*/
-
 .curtainContainer {
     width: 100%; 
     height: 100%;
@@ -65,28 +55,7 @@
     text-align: center;
 }
 
-
-/*  .curtainContainer {
-    width: 100%; height: 100%;
-    position: relative;
-  }
-  .curtainContainer .curtain {
-      width: 300%; 
-      height: 1px;
-      background-color: #000000;
-      position: relative; 
-      top: 25%; 
-      left: 0;
-      opacity: 0
-  }
-  .curtainContainer .copy {
-      position: relative;
-      bottom: 30%; left: 0;
-      width: 100%; text-align: center;
-  }*/
-
   #portfolio{
-    /*background-color: #343434;*/
     height: 65%;
   }
 
@@ -99,8 +68,6 @@
 
 
   #project-container{
-    /*background-color: lightblue;*/
-    /*margin: auto;*/
     padding-top: 30rem;
     top: 9rem;
     width: 100%;
@@ -131,7 +98,7 @@
     height: 15rem;
   }
 
-  /*.louder-overlay {
+  .louder-overlay {
    height: 100%;
    z-index: 1;
    display: none;
@@ -174,17 +141,17 @@
     z-index: 1;
     display: none;
     box-sizing: border-box;
-  }*/
+  }
 
 
-/*
+
   .playlisten-overlay{
     height: 100%;
     z-index: 1;
     display: none;
     box-sizing: border-box;
   }
-*/
+
 
   .caption{
     display: none;

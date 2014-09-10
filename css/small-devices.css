@@ -91,6 +91,7 @@
 
   #quote{
     height: 36%;
+    width: 20rem;
   }
 
   #quote-content{
@@ -100,7 +101,7 @@
   }
 
   #quote h6{
-    width: 30rem;
+    width: 20rem;
   }
 
   #about{
@@ -125,7 +126,6 @@
   #contact {
     position: absolute;
     background: url('../images/laptop_desk_color.gif') no-repeat -49rem center fixed;
-    /*background-size: cover;*/
   }
 
   .nav-logo a{
