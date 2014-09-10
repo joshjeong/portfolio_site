@@ -50,28 +50,36 @@ html {
 #quote-content{
   font-family: Righteous;
   color: #343434;
-  font-size: 2rem;
-  width: 80rem;
   margin: auto;
   text-align: left;
-  margin-top: 5rem;
   position: relative;
 }
 
 #about {
   background: url('../images/essentials.jpg') no-repeat center center fixed;
   background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 #about-content{
   font-family: Lato;
-  color: white;;
+  color: white;
   font-size: 2rem;
   width: 80rem;
   margin: auto;
   text-align: left;
-  top: 25rem;
   position: relative;
+}
+
+.curtainContainer .curtain {
+    width: 300%; 
+    height: 1px;
+    /*background-color: #000000;*/
+    position: absolute; 
+    top: 25%; 
+    left: 0;
+    opacity: .8
 }
 
 

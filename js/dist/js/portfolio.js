@@ -38,7 +38,7 @@ var Controller = function(view){
           if (target.length) {
             $('html,body').animate({
               scrollTop: target.offset().top
-            }, 800);
+            }, 3000);
             return false;
           }
         }
