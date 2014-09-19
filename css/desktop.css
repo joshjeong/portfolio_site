@@ -53,21 +53,22 @@
   }
 
   .curtainContainer .copy {
-      position: absolute;
-      bottom: 30%; 
-      left: 0;
-      width: 100%; 
-      text-align: center;
+    position: absolute;
+    bottom: 30%; 
+    left: 0;
+    width: 100%; 
+    text-align: center;
   }
 
   #portfolio{
-    height: 25%;
+    height: 15%;
   }
 
 
   #contact {
-    background-color: #343434;
-    height: 10%;
+    background: url('https://unsplash.imgix.net/13/unsplash_523ae1f5502d6_1.JPG?q=75&fm=jpg&auto=format&s=5d596c4c39191ab7fbec5252d61122e9') no-repeat center center fixed;
+    background-size: cover;
+    height: 15%;
   }
 
 
@@ -77,12 +78,17 @@
   }
 
   #playlisten{
+    margin-top: 4rem;
+    left: 12%;
   }
 
   #louder{
+    margin-top: -3rem;
+    margin-left: 60%;
   }
 
   #louder-caption{
+    left: 12%;
   }
 
 /*
@@ -150,12 +156,15 @@
 
 
   .caption{
+    font-family: Lato;
     position: relative;
     color: black;
-    font-size: 2rem;
-    width: 58%;
-    left: 34rem;
-    top: -9rem;
+    font-size: 1.5rem;
+    width: 40%;
+    left: 33rem;
+    top: -10rem;
+    height: 10rem;
+    text-align: left;
   }
   
 
@@ -163,8 +172,6 @@
     height: 15rem;
     width: 20rem;
     position:relative;
-    margin-top: 20rem;
-    left: 10%;
   }
 
   .nav-item {
@@ -368,7 +375,7 @@
 .arrow {
   position: absolute;
   right: 11.5rem;
-  margin-top: -13.5rem;
+  margin-top: 3.5rem;
   width: 40px;
   height: 40px;
   background-image: url('../images/arrow.png');
