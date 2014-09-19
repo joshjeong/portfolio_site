@@ -37,23 +37,23 @@
     width: 100%; 
     height: 100%;
     position: relative;
-}
-.curtainContainer .curtain {
-    width: 100%; 
-    height: 1px;
-    background-color: #000000;
-    position: absolute; 
-    top: 25%; 
-    left: 0;
-    opacity: 0
-}
-.curtainContainer .copy {
-    position: absolute;
-    bottom: 30%; 
-    left: 0;
-    width: 100%; 
-    text-align: center;
-}
+  }
+  .curtainContainer .curtain {
+      width: 100%; 
+      height: 1px;
+      background-color: #000000;
+      position: absolute; 
+      top: 25%; 
+      left: 0;
+      opacity: 0
+  }
+  .curtainContainer .copy {
+      position: absolute;
+      bottom: 30%; 
+      left: 0;
+      width: 100%; 
+      text-align: center;
+  }
 
   #portfolio{
     height: 10%;
@@ -62,8 +62,8 @@
 
   #contact {
     position: absolute;
-    background: url('../images/bike-and-guy.jpeg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #343434;
+    height: 5%;
   }
 
 
@@ -280,6 +280,10 @@
     box-shadow: 0 3px 3px rgba(1,1,1,0.2);
     -webkit-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
     -moz-box-shadow: 0 3px 3px rgba(1,1,1,0.2);    
+  }
+
+  #email{
+    height: 3.5%;
   }
 
 
