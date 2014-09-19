@@ -2,7 +2,7 @@ $(document).on('ready', function () {
   var view= new View
   var controller = new Controller(view)
   controller.scrollTo();
-  controller.bindListeners();
+  // controller.bindListeners();
   view.animateArrow();
   if ($('#twitter').css('background-color')== "rgba(0, 0, 0, 0)"){
      var s = skrollr.init({

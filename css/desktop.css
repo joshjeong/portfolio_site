@@ -16,7 +16,8 @@
 
   #quote-content{
     font-size: 2rem;
-    width: 80rem;
+    width: 90%;
+    min-width: 60rem;
     margin-top: 5rem;
   }
 
@@ -31,72 +32,74 @@
   #about-content{
     top: 60rem;
     padding-top: 20rem;
+    width: 90%;
+    min-width: 60rem;
   }
 
-.curtainContainer {
+  .curtainContainer {
     width: 100%; 
     height: 100%;
     position: relative;
-}
-.curtainContainer .curtain {
-    width: 100%; 
-    height: 1px;
-    background-color: #000000;
-    position: absolute; 
-    top: 25%; 
-    left: 0;
-    opacity: 0
-}
-.curtainContainer .copy {
+  }
+
+  .curtainContainer .curtain {
+      width: 100%; 
+      height: 1px;
+      background-color: #000000;
+      position: absolute; 
+      top: 25%; 
+      left: 0;
+      opacity: 0
+  }
+
+  .curtainContainer .copy {
     position: absolute;
     bottom: 30%; 
     left: 0;
     width: 100%; 
     text-align: center;
-}
+  }
 
   #portfolio{
-    height: 10%;
+    height: 15%;
   }
 
 
   #contact {
-    position: absolute;
-    background: url('../images/bike-and-guy.jpeg') no-repeat center center fixed;
+    background: url('https://unsplash.imgix.net/13/unsplash_523ae1f5502d6_1.JPG?q=75&fm=jpg&auto=format&s=5d596c4c39191ab7fbec5252d61122e9') no-repeat center center fixed;
     background-size: cover;
+    height: 15%;
   }
 
 
   #project-container{
-    margin-top: 12rem;
+    height: 50rem;
     width: 100%;
-    height: 20rem;
   }
 
   #playlisten{
-    position:absolute;
-    left: 15%;
-    width: 22rem;
-    height: 15rem;
+    margin-top: 4rem;
+    left: 12%;
   }
 
   #louder{
-    position:absolute;
-    left: 40%;
-    width: 22rem;
-    height: 15rem;
+    margin-top: -3rem;
+    margin-left: 60%;
   }
 
+  #louder-caption{
+    left: 12%;
+  }
 
+/*
   #ledger{
     position:absolute;
     left: 65%;
     width: 22rem;
     height: 15rem;
   }
-
-
-  .louder-overlay {
+*/
+/*  .louder-overlay {
    height: 100%;
    z-index: 1;
    display: none;
@@ -149,23 +152,26 @@
     display: none;
     box-sizing: border-box;
   }
-
+*/
 
 
   .caption{
-    display: none;
+    font-family: Lato;
     position: relative;
-    width: 75%;
-    font-size: 2rem;
     color: black;
-    margin: auto;
-    bottom: -6rem;
+    font-size: 1.5rem;
+    width: 40%;
+    left: 33rem;
+    top: -10rem;
+    height: 10rem;
+    text-align: left;
   }
   
 
   .project-grid{
-    height: 50%;
-    width: 100%
+    height: 15rem;
+    width: 20rem;
+    position:relative;
   }
 
   .nav-item {
@@ -368,8 +374,8 @@
 
 .arrow {
   position: absolute;
-  top: 3.2rem;
   right: 11.5rem;
+  margin-top: 3.5rem;
   width: 40px;
   height: 40px;
   background-image: url('../images/arrow.png');
