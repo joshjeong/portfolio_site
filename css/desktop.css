@@ -66,8 +66,6 @@
 
 
   #contact {
-    background: url('https://unsplash.imgix.net/13/unsplash_523ae1f5502d6_1.JPG?q=75&fm=jpg&auto=format&s=5d596c4c39191ab7fbec5252d61122e9') no-repeat center center fixed;
-    background-size: cover;
     height: 15%;
   }
 
@@ -277,15 +275,13 @@
 
 
   #contact-container{
-    position: relative;
-    margin-top: 28rem;
-    left: 0;
-    background-color: #343434;
+    position: absolute;
+    color: #414141;
     height: 15rem;
     width: 40rem;
-    box-shadow: 0 3px 3px rgba(1,1,1,0.2);
-    -webkit-box-shadow: 0 3px 3px rgba(1,1,1,0.2);
-    -moz-box-shadow: 0 3px 3px rgba(1,1,1,0.2);    
+    margin-top: 15rem;
+    font-size: 2rem;
+    left: 25%;
   }
 
 
@@ -375,7 +371,7 @@
 .arrow {
   position: absolute;
   right: 11.5rem;
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
   width: 40px;
   height: 40px;
   background-image: url('../images/arrow.png');
