@@ -100,6 +100,16 @@ html {
   background-size: cover;
 }
 
+#contact {
+  background: url('https://unsplash.imgix.net/13/unsplash_523ae1f5502d6_1.JPG?q=75&fm=jpg&auto=format&s=5d596c4c39191ab7fbec5252d61122e9') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#contact a{
+  text-decoration: none;
+  color: red;
+}
+
 .nav-logo {
   text-decoration: none;
   color: white;
