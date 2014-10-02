@@ -1,6 +1,11 @@
 $(document).on('ready', function () {
-  var view= new View
-  var controller = new Controller(view)
+  var pokemonView = new pView();
+      pokemonController = new pController(pokemonView);
+      view= new View;
+      controller = new Controller(view);
+  $(document).on('keyup', function(e){
+    pokemonController.bindkeys(e);
+  })
   controller.scrollTo();
   // controller.bindListeners();
   view.animateArrow();

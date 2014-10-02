@@ -43,13 +43,13 @@
   }
 
   .curtainContainer .curtain {
-      width: 100%; 
-      height: 1px;
-      background-color: #000000;
-      position: absolute; 
-      top: 25%; 
-      left: 0;
-      opacity: 0
+    width: 100%; 
+    height: 1px;
+    background-color: #000000;
+    position: absolute; 
+    top: 25%; 
+    left: 0;
+    opacity: 0
   }
 
   .curtainContainer .copy {
@@ -88,70 +88,6 @@
   #louder-caption{
     left: 12%;
   }
-
-/*
-  #ledger{
-    position:absolute;
-    left: 65%;
-    width: 22rem;
-    height: 15rem;
-  }
-*/
-/*  .louder-overlay {
-   height: 100%;
-   z-index: 1;
-   display: none;
-   box-sizing: border-box;
-  }
-
-  #louder-overlay1{
-    background: url('../images/louder1.png');
-    background-size: cover;
-  }
-
-  #louder-overlay2{
-    background: url('../images/louder2.png');
-    background-size: cover;
-  }
-
-
-  #ledger-overlay1{
-    background: url('../images/ledger1.png');
-    background-size: cover;
-  }
-
-  #ledger-overlay2{
-    background: url('../images/ledger2.png');
-    background-size: cover;
-  }
-
-  #playlisten-overlay1{
-    background: url('../images/playlisten2.png');
-    background-size: cover;
-  }
-
-  #playlisten-overlay2{
-    background: url('../images/playlisten1.png');
-    background-size: cover;
-  }
-
-  .ledger-overlay{
-    height: 100%;
-    z-index: 1;
-    display: none;
-    box-sizing: border-box;
-  }
-
-
-
-  .playlisten-overlay{
-    height: 100%;
-    z-index: 1;
-    display: none;
-    box-sizing: border-box;
-  }
-*/
-
 
   .caption{
     font-family: Lato;
@@ -284,6 +220,98 @@
     left: 25%;
   }
 
+  #pokemon{
+    width: 100%;
+    background: url('../images/clouds.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 34rem;
+    position: relative;
+  }
+
+  #racetrack{
+    background-image: url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    position: relative;
+    height: 22rem;
+    width: 70rem;
+    margin: auto;
+  }
+
+  #racetrack h1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .players{
+    background-size: cover;
+    position: absolute;
+    left: 10;
+    top: 15rem;
+  }
+
+  #player1{
+    background-image: url('../images/squirtle.gif');
+    height: 5rem;
+    width: 5rem;
+  }
+
+  #player2{
+    background-image: url('../images/charmander.gif');
+    height: 5rem;
+    width: 5rem;
+  }
+
+  #gameover{
+    display: none;
+    border: 4px solid green;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10rem;
+    width: 12rem;
+    top: 13rem;
+    z-index: 1;
+    margin: auto;
+    background-color: #E4E4E4;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  #gameover h1{
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top: 2rem;
+  }
+
+  #avatar{
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    margin: auto;
+    top: 2rem;
+    background-size: cover;
+  }
+
+  #instructions {
+    padding: 1rem;
+    position: relative;
+    color: white;
+    margin: auto;
+    text-align: center
+  }
+
+  #instructions h1{
+    font-size: 2rem;
+    color: darkgreen;
+  }
+  
+  #instructions h2{
+
+  }
+
 
 /*BOUNCE EFFECT-----------------------*/
   @-webkit-keyframes bounce {
@@ -305,84 +333,84 @@
     -ms-transform: translateY(15px);
     transform: translateY(15px);
   }
-}
-@-moz-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
   }
-  40% {
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    transform: translateY(30px);
+  @-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(30px);
+      -moz-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+      transform: translateY(30px);
+    }
+    60% {
+      -webkit-transform: translateY(15px);
+      -moz-transform: translateY(15px);
+      -ms-transform: translateY(15px);
+      transform: translateY(15px);
+    }
   }
-  60% {
-    -webkit-transform: translateY(15px);
-    -moz-transform: translateY(15px);
-    -ms-transform: translateY(15px);
-    transform: translateY(15px);
+  @-ms-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(30px);
+      -moz-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+      transform: translateY(30px);
+    }
+    60% {
+      -webkit-transform: translateY(15px);
+      -moz-transform: translateY(15px);
+      -ms-transform: translateY(15px);
+      transform: translateY(15px);
+    }
   }
-}
-@-ms-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(30px);
+      -moz-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+      transform: translateY(30px);
+    }
+    60% {
+      -webkit-transform: translateY(15px);
+      -moz-transform: translateY(15px);
+      -ms-transform: translateY(15px);
+      transform: translateY(15px);
+    }
   }
-  40% {
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  60% {
-    -webkit-transform: translateY(15px);
-    -moz-transform: translateY(15px);
-    -ms-transform: translateY(15px);
-    transform: translateY(15px);
-  }
-}
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  60% {
-    -webkit-transform: translateY(15px);
-    -moz-transform: translateY(15px);
-    -ms-transform: translateY(15px);
-    transform: translateY(15px);
-  }
-}
 
 
-.arrow {
-  position: absolute;
-  right: 11.5rem;
-  margin-top: 2.5rem;
-  width: 40px;
-  height: 40px;
-  background-image: url('../images/arrow.png');
-  background-size: contain;
-}
+  .arrow {
+    position: absolute;
+    right: 11.5rem;
+    margin-top: 2.5rem;
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/arrow.png');
+    background-size: contain;
+  }
 
-.bounce {
-  -webkit-animation: bounce 2s infinite;
-  -moz-animation: bounce 2s infinite;
-  -ms-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
+  .bounce {
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -ms-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
 
 }
