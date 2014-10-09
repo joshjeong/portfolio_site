@@ -35,8 +35,13 @@ html {
 
 #home {
   text-align: center;
-  background: url('../images/mountain_and_moon.jpg') no-repeat center center fixed;
+  background: url('../images/city_daytime.gif') no-repeat center center fixed;
   background-size: cover;
+  width: 100%;
+}
+#overlay{
+  background-color: rgba(0,0,0,0.3);
+  height: 100%;
   width: 100%;
 }
 
