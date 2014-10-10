@@ -34,8 +34,8 @@ html {
   text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
   box-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
   border: 1rem solid white;
-  left: 50%;
-  margin-left: -6rem;
+  left: -7rem;
+  margin-left: 50%;
   position: fixed;
 }
 
@@ -144,20 +144,10 @@ html {
   background-size: cover;
 }
 
-#ledger{
-  background: url('../images/ledger.png') no-repeat;
-  background-size: cover;
-}
-
 #contact {
   background: url('../images/black_white_mac.jpeg') no-repeat center center fixed;
   background-size: cover;
   height: 15%;
-}
-
-#contact a{
-  text-decoration: none;
-  color: red;
 }
 
 .nav-logo {
@@ -217,7 +207,8 @@ html {
   width: 40rem;
   margin-top: 15rem;
   font-size: 2rem;
-  left: 25%;
+  left: -20rem;
+  margin-left: 50%;
 }
 
 #playlisten-caption{
@@ -539,7 +530,8 @@ html {
     position: absolute;
     margin: auto;
     bottom: 0;
-    left: 47%;
+    margin-left: 50%;
+    left: -50px;
     width: 100px;
     height: 100px;
     background-image: url('../images/arrow.png');

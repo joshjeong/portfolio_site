@@ -1,7 +1,7 @@
 @media only screen and (max-device-width: 760px) {
 
   #trigger{
-    opacity=0.2
+    opacity:0.2;
   }
 
   #home {
@@ -9,34 +9,25 @@
   }
 
   #name-title{
-    position: relative;
-    margin: auto;
+    position: absolute;
+    top: 10rem;
   }
 
-  #quote {
-    height: 100%;
-  }
-  #project-container{
-    background-color: white;
-    position: relative;
-    margin: auto;
-    top: 1rem;
-    height: 33rem;
+  #quote{
+    height: 36%;
   }
 
-  #top-row{
-    top: 5%;
-    position: relative;
-    margin: auto;
-    height: 97%;
-    width: 15rem;
+  #quote-content{
+    min-width: 0;
+    font-size: 1.5rem;
+    width: 18rem;
+    margin-top: 3rem;
   }
 
-  .project-grid{
-    width: 100%;
-    height: 10rem;
-    box-shadow: 3px 2px 2px rgba(150, 150, 150, 1);
+  #quote h6{
+    width: 20rem;
   }
+
 
   .nav-item {
     display: inline-block;
@@ -83,7 +74,7 @@
     top: 1rem;
     text-align: center;
     padding-top: 1rem;
-    padding-right: 0.7rem;
+    padding-right: 0.3rem;
   }
   
   .nav-link a {
@@ -93,32 +84,23 @@
     color: white;
   }
 
-  #quote{
-    height: 36%;
-    width: 20rem;
-  }
-
-  #quote-content{
-    font-size: 1.5rem;
-    width: 18rem;
-    margin-top: 3rem;
-  }
-
-  #quote h6{
-    width: 20rem;
-  }
+/*ABOUT --------------*/
 
   #about{
     background-position: -25rem;
+    height: 150%;
   }
 
   #about-content{
     box-sizing: border-box;
-    top: 10rem;
+    top: 9rem;
     padding: 1rem 10px;
     font-size: 1.5rem;
     background-color: rgba(0,0,0,0.8);
-    width: 100%;
+    width: 18rem;
+    min-width: 0;
+    text-align: left;
+
   }
 
   .curtainContainer{
@@ -128,9 +110,11 @@
   }
 
   #contact {
-    position: absolute;
-    background: url('../images/black_white_mac.jpeg') no-repeat -49rem center fixed;
+    position: relative;
+    height: 100%;
   }
+
+  /* NAVBAR-------*/
 
   .nav-logo a{
     color: white;
@@ -154,5 +138,90 @@
     /*padding-left: 0.1rem;*/
     padding-right: 0.1rem;
   } 
+
+/*PORTFOLIO--------------*/
+  #laptop{
+    display: none;
+  }
+
+  #portfolio {
+    background-color: white;
+    position: relative;
+    height: 100%;
+  }
+
+  #portfolio-anchor{
+    position: relative;
+    top: -20rem;
+  }
+
+
+  #playlisten{
+  }
+
+  #louder{
+    top: 10rem;
+  }
+
+  .project{
+    position: relative;
+    background-repeat: no-repeat;
+    left: 0;
+    height: 10rem;
+    top: 3rem;
+    width: 15rem;
+    margin: auto;
+    display: block;
+  }
+
+  #caption-container{
+    display: block;
+    position: absolute;
+    margin: auto;
+    text-align: left;
+    top: 14rem;
+    height: 40rem;
+    z-index: 0;
+  }
+
+  #caption-container h1{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 900;
+    display: block;
+    font-size: 1rem;  
+    text-align: left;
+  }
+
+
+  #playlisten-caption{
+    text-align: left;
+    position: relative;
+    display: block;
+    top: 0;
+    padding-bottom: 13rem;
+  }
+
+  #louder-caption{
+    text-align: left;
+    position: relative;
+    display: block;
+    top: 0;
+  }
+
+  #contact-container{
+    text-align: center;
+    position: relative;
+    color: #414141;
+    height: 15rem;
+    top: 15rem;
+    width: 17rem;
+    font-size: 2rem;
+    margin: auto;
+    left: 0;
+  }
+
+
+
+
 
 }
