@@ -125,7 +125,7 @@ html {
 #portfolio {
   background-color: white;
   position: relative;
-  height: 60%;
+  height: 64%;
 }
 
 
@@ -256,7 +256,7 @@ html {
 }
 
 .navbar-right {
-  margin-right: 8rem;
+  margin-right: 5%;
   right: 0;
   margin-top: 1rem;
 
@@ -341,17 +341,31 @@ html {
   background: url('../images/clouds.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 34rem;
+  height: 20rem;
   position: relative;
 }
 
 #racetrack{
-  background-image: url('../images/background.jpeg');
+  background-image: url('../images/pokemon_field.png');
   background-repeat: no-repeat;
   position: relative;
-  height: 22rem;
-  width: 70rem;
+  height: 16rem;
+  background-size: contain;
+  width: 54rem;
   margin: auto;
+  overflow: hidden;
+}
+
+#front-grass{
+  background-image: url('../images/front_grass.png');
+  background-repeat: repeat;
+  height: 5rem;
+  width: 60rem;
+  position: absolute;
+  display: inline-block;
+  bottom: -1.7rem;
+  left: 0;
+  z-index: 999;
 }
 
 #racetrack h1{
@@ -362,21 +376,23 @@ html {
 
 .players{
   background-size: cover;
-  position: absolute;
   left: 10;
-  top: 15rem;
+  top: 10rem;
+  display: inline-block;
 }
 
 #player1{
   background-image: url('../images/squirtle.gif');
   height: 5rem;
   width: 5rem;
+  position: absolute;
 }
 
 #player2{
   background-image: url('../images/charmander.gif');
   height: 5rem;
   width: 5rem;
+  position: relative;
 }
 
 #gameover{

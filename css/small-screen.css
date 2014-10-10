@@ -1,4 +1,4 @@
-@media (max-width: 880px) {
+@media (max-width: 700px) {
   .nav-logo a{
     color: white;
     padding-top: 0.1rem;
@@ -39,7 +39,12 @@
   }
 
   .navbar-left{
-    margin-left: 10%;
+    left: -16rem;
+    margin-left: 50%;
+  }
+
+  #portfolio{
+    height: 70%;
   }
 
   #caption-container{
@@ -55,6 +60,60 @@
   .project{
     top: 6rem;    
   }
+
+  .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+/*----------POKEMON-------------*/
+
+
+#pokemon{
+  display:none;
+}
+
+#racetrack{
+  display:none;
+}
+
+#racetrack h1{
+  display:none;
+}
+
+.players{
+  display:none;
+}
+
+#player1{
+  display:none;
+}
+
+#player2{
+  display:none;
+}
+
+#gameover{
+  display:none;
+}
+
+#gameover h1{
+  display:none;
+}
+
+#avatar{
+  display:none;
+}
+
+#instructions {
+  display:none;
+}
+
+#instructions h1{
+  display:none;
+}
+
+
 
 
 
