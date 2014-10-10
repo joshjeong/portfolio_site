@@ -1,4 +1,4 @@
-var FINISHLINE = "810px"
+var FINISHLINE = "430px"
 
 var pView = function(){
   this.update= function(player, newPosition){
