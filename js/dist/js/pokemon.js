@@ -74,14 +74,18 @@ var pController = function(pokemonView){
   }
 
   this.moveGrass = function(){
-    console.log('hi')
     var grassPos= parseInt($('#front-grass').css('left'))
     $('#front-grass').css('left', grassPos-2)
+  }
+
+  this.resetGrass = function(){
+    $('#front-grass').css('left', 0)
   }
 
   this.reset = function(){
     self.pokemonView.hideResult();
     self.pokemonView.resetPlayers(player1, player2);
+    self.resetGrass();
   }
 
 

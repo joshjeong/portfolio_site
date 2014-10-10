@@ -7,7 +7,6 @@ $(document).on('ready', function () {
     pokemonController.bindkeys(e);
   })
   controller.scrollTo();
-  // controller.bindListeners();
   view.animateArrow();
   if ($('#trigger').css('opacity')== "0"){
      var s = skrollr.init({
