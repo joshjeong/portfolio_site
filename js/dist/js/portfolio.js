@@ -9,7 +9,7 @@ $(document).on('ready', function () {
   controller.scrollTo();
   // controller.bindListeners();
   view.animateArrow();
-  if ($('#twitter').css('background-color')== "rgba(0, 0, 0, 0)"){
+  if ($('#trigger').css('opacity')== "0"){
      var s = skrollr.init({
             render: function(data){
               console.log(data.curTop)
