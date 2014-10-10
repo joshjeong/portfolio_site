@@ -26,7 +26,7 @@
   }
 
   #about {
-    height: 48%;
+    height: 40%;
   }
 
   #about-content{
@@ -61,7 +61,7 @@
   }
 
   #portfolio{
-    height: 15%;
+    height: 50%;
   }
 
 
@@ -69,20 +69,42 @@
     height: 15%;
   }
 
-
-  #project-container{
-    height: 50rem;
-    width: 100%;
+  #laptop{
+    background: url('../images/macbook_profile.png');
+    position: fixed;
+    height: 25rem;
+    width: 43rem;
+    left: 50%;
+    margin-left: -21.5rem;
+    bottom: 50%;
+    margin-bottom: -12.5rem;
+    /*margin-left: -21.5rem;*/
+    background-size: contain;
+    z-index: 2;
   }
 
+
+/*  #project-container{
+    height: 50rem;
+    width: 100%;
+  }*/
+
   #playlisten{
-    margin-top: 4rem;
-    left: 12%;
+    position: fixed;
+    height: 21rem;
+    width: 32rem;
+    left: 32%;
+    bottom: 59%;
+    margin-bottom: -13rem
   }
 
   #louder{
-    margin-top: -3rem;
-    margin-left: 60%;
+    position: fixed;
+    height: 21rem;
+    width: 32rem;
+    left: 67%;
+    bottom: 59%;
+    margin-bottom: -13rem
   }
 
   #louder-caption{
@@ -100,13 +122,22 @@
     height: 10rem;
     text-align: left;
   }
-  
 
-  .project-grid{
-    height: 15rem;
-    width: 20rem;
-    position:relative;
+  .cover{
+
+    height: 100%;
+    width: 26rem;
+    bottom: 0;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    background-size: cover;
   }
+
+  #block-right{
+    right: 0;
+  }
+  
 
   .nav-item {
     display: inline-block;
