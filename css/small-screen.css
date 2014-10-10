@@ -39,7 +39,23 @@
   }
 
   .navbar-left{
-    margin-left: 0;
+    margin-left: 10%;
   }
+
+  #caption-container{
+    left: 2rem;
+    top: 28rem;
+    width: 87%;
+  }
+
+  #laptop{
+    top: 6rem;    
+  }
+
+  .project{
+    top: 6rem;    
+  }
+
+
 
 }
