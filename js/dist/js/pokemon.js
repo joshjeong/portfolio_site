@@ -1,4 +1,4 @@
-var FINISHLINE = "810px"
+var FINISHLINE = "830px"
 
 var pView = function(){
   this.update= function(player, newPosition){
@@ -37,11 +37,13 @@ var pController = function(pokemonView){
       position = this.currentPosition(player1)
       this.move(player1, position)
       this.zindex()
+      this.moveGrass()
     }
     else if(e.keyCode == 76){
       position = this.currentPosition(player2)
       this.move(player2, position)
       this.zindex()
+      this.moveGrass()
     }
   }
 
@@ -71,9 +73,19 @@ var pController = function(pokemonView){
     }
   }
 
+  this.moveGrass = function(){
+    var grassPos= parseInt($('#front-grass').css('left'))
+    $('#front-grass').css('left', grassPos-2)
+  }
+
+  this.resetGrass = function(){
+    $('#front-grass').css('left', 0)
+  }
+
   this.reset = function(){
     self.pokemonView.hideResult();
     self.pokemonView.resetPlayers(player1, player2);
+    self.resetGrass();
   }
 
 

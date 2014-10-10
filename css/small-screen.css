@@ -1,0 +1,120 @@
+@media (max-width: 700px) {
+  .nav-logo a{
+    color: white;
+    padding-top: 0.1rem;
+  }
+
+  .nav-logo{
+    border: none;
+  }
+
+  #twitter{
+    background-color:#55ACEE;
+  }
+
+  #google{
+    background-color:#dd4b39;
+  }
+
+  #git{
+    background-color:black;
+  }
+
+  #linkedin{
+    background-color: #007bb6;
+    /*padding-left: 0.1rem;*/
+    padding-right: 0.1rem;
+  } 
+
+  .nav-item{
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+    display: block;
+  }
+
+  .navbar-right{
+    position: absolute;
+    margin-right: 0;
+    margin-top: 3rem;
+  }
+
+  .navbar-left{
+    left: -16rem;
+    margin-left: 50%;
+  }
+
+  #portfolio{
+    height: 70%;
+  }
+
+  #caption-container{
+    left: 2rem;
+    top: 28rem;
+    width: 87%;
+  }
+
+  #laptop{
+    top: 6rem;    
+  }
+
+  .project{
+    top: 6rem;    
+  }
+
+  .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+/*----------POKEMON-------------*/
+
+
+#pokemon{
+  display:none;
+}
+
+#racetrack{
+  display:none;
+}
+
+#racetrack h1{
+  display:none;
+}
+
+.players{
+  display:none;
+}
+
+#player1{
+  display:none;
+}
+
+#player2{
+  display:none;
+}
+
+#gameover{
+  display:none;
+}
+
+#gameover h1{
+  display:none;
+}
+
+#avatar{
+  display:none;
+}
+
+#instructions {
+  display:none;
+}
+
+#instructions h1{
+  display:none;
+}
+
+
+
+
+
+}

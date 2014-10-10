@@ -4,7 +4,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/portfolio.css">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 761px)" href="css/desktop.css" />
+  <link rel="stylesheet" media="(max-width: 880px)" href="css/small-screen.css" />
   <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 760px)" href="css/small-devices.css" />
   <title>Josh's Portfolio Site</title>
 </head>
@@ -13,7 +13,7 @@
     <div class= "navbar-left">
       <div class= "nav-link"><a data-scroll href = "#home">HOME</a></div>
       <div class= "nav-link"><a data-scroll href = "#about-content">ABOUT</a></div>
-      <div class= "nav-link"><a data-scroll href = "#portfolio">PORTFOLIO</a></div>
+      <div class= "nav-link"><a data-scroll href = "#portfolio-anchor">PORTFOLIO</a></div>
       <div class= "nav-link"><a data-scroll href = "#contact">CONTACT</a></div>
     </div>
 
@@ -52,6 +52,7 @@
         data-0-start="opacity: 1;" 
         data-50-start="opacity: 0;">
     </div>
+    <div id= "trigger"></div>
   </section>
   <section class = "section" id = "quote">
     <h1 id ="quote-content">
@@ -62,56 +63,65 @@
   <section class = "homeSlide homeSlideTall" id = "about">
     <div class="curtainContainer">
       <div class="curtain"
-          data-2100-start="height: 1%; top: -10%; opacity: 0"
-          data-2600-start="height: 100%; top: 0.1%; opacity: 0.6;" 
-          data-3000-start="opacity: 0.75;" 
+          data-1700-start="height: 1%; top: -10%; opacity: 0"
+          data-2000-start="height: 100%; top: 0.1%; opacity: 0.6;" 
+          data-2300-start="opacity: 0.75;" 
           data-anchor-target="#about">
       </div>
       <h3 id="about-content"
-          data-2300-start="opacity: 0;" 
-          data-2400-start="opacity: 1;"
-          data-3250-start="opacity: 1;" 
-          data-3600-start="opacity: 0;" >
+          data-2350-start="opacity: 0;" 
+          data-2500-start="opacity: 1;"
+          data-2800-start="opacity: 1;" 
+          data-2900-start="opacity: 0;" >
        I am a Full Stack Web Developer who strives to architect code that is beautiful and maintainable. Since learning my first coding language, there never is a lull moment with so many new technologies to tackle. Besides my passion for coding, I love to take my GoPro on new adventures, play with my two overweight French Bulldogs, and pretend I know how to play the ukulele.</h3>
     </div>
   </section>
   <section class = "section" id = "portfolio">
     <div id= "laptop"
-          data--750-end="opacity: 0;" 
-          data--830-end="opacity: 1;"
-          data--2500-end="opacity: 1;" 
-          data--3000-end="opacity: 0;">
+          data--600-end="opacity: 0;" 
+          data--800-end="opacity: 1;"
+          data--2100-end="opacity: 1;" 
+          data--2300-end="opacity: 0;">
     </div>
 
       <div class = "project" id = "playlisten" 
-          data--850-end="opacity: 0;" 
-          data--950-end="opacity: 1;"
-          data--1200-end="left: 4rem;" 
+          data--700-end="opacity: 0;" 
+          data--900-end="opacity: 1;"
+          data--1400-end="left: 4rem;" 
           data--1600-end="left: -23rem;"
-          data--1600-end="opacity: 1;" 
-          data--1601-end="opacity: 0;"
+          data--2100-end="opacity: 1;" 
+          data--2101-end="opacity: 0;"
           >
       </div>
-<!--       <h1 class="caption" id="playlisten-caption"
-          data--400-end="opacity: 0"
-          data--700-end="opacity: 1">
-        Host a room playing YouTube playlist where guests can join and add songs. Built with Ruby/Sinatra and JavaScript.
-      </h1> -->
       <div class = "project" id = "louder"
-          data--850-end="opacity: 0;" 
-          data--950-end="opacity: 1;"
-          data--1200-end="left: 31rem;" 
+          data--1200-end="opacity: 0;" 
+          data--1201-end="opacity: 1;"
+          data--1400-end="left: 31rem;" 
           data--1600-end="left: 4rem;"
-          data--2000-end="opacity: 1;" 
-          data--2500-end="opacity: 0;"
+          data--2100-end="opacity: 1;" 
+          data--2300-end="opacity: 0;"
           >
 
       </div>
-<!--       <h1 class="caption" id="louder-caption"
-          data--700-end="opacity: 0"
-          data--900-end="opacity: 1">
-        Louder is a full javascript app using web sockets that allows users to connect multiple devices in order to amplify music.
-      </h1> -->
+
+      <div id ="caption-container">
+        <h1 id="playlisten-caption"
+            data--700-end="opacity: 0;" 
+            data--900-end="opacity: 1;"
+            data--1400-end="opacity: 1;" 
+            data--1550-end="opacity: 0;">
+          Host a room playing YouTube playlist where guests can join and add songs. Built with Ruby/Sinatra and JavaScript.
+        </h1>
+        <h1 id="louder-caption"
+            data--1550-end="opacity: 0"
+            data--1700-end="opacity: 1"
+            data--2100-end="opacity: 1;" 
+            data--2300-end="opacity: 0;">
+          Louder is a full javascript app using web sockets that allows users to connect multiple devices in order to amplify music.
+        </h1>
+      </div>
+      <div id ="portfolio-anchor"></div>
+
   </section>
   <section id= "pokemon">
     <div id="gameover">
@@ -121,16 +131,16 @@
 
     <div id= "instructions">
       <h1>Pokemon Racer!!!</h1>
-      <h2>Race to the tree!!</h2>
+      <h2>Race to the end!!!!</h2>
       <h2>Tap [A] for Squirtle.</h2>
       <h2>Tap [L] for Charmander</h2>
     </div>
     <div id="racetrack">
       <div class="players" id="player1"></div>
       <div class="players" id="player2"></div>
-      <h1>Built w Javascript/HTML/CSS</h1>
+      <div id= "front-grass"></div>
+      <div id= "clouds"></div>
     </div>
-
   </section>
 
   <section class = "section" id = "contact"> 
@@ -140,15 +150,14 @@
         Josh Jeong
       </h1>
       <h3 id="email">
-        Email: jcjeong@gmail.com
+        jcjeong@gmail.com
       </h3>
 <!--       <a href="www.github.com/joshjeong">Github</a> | <a href="www.linkedin.com/in/jcjeong">LinkedIn</a>| <a href="" id="resume">Resume</a> -->
     </div>
   </section>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="js/skrollr-master/dist/skrollr.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.27/skrollr.min.js"></script>
   <script type="text/javascript" src="js/dist/js/pokemon.js"></script>
   <script type="text/javascript" src="js/dist/js/portfolio.js"></script>
-
 </body>
 </html>
