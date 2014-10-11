@@ -6,6 +6,7 @@
 
   #home {
     height: 100%;
+    background-attachment: scroll; 
   }
 
   #name-title{
@@ -14,7 +15,7 @@
   }
 
   #quote{
-    height: 36%;
+    height: 42%;
   }
 
   #quote-content{
@@ -89,6 +90,7 @@
   #about{
     background-position: -25rem;
     height: 150%;
+    background-attachment: scroll; 
   }
 
   #about-content{
@@ -112,6 +114,7 @@
   #contact {
     position: relative;
     height: 100%;
+    background-attachment: scroll; 
   }
 
   /* NAVBAR-------*/
