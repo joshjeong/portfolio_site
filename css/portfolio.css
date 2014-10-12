@@ -132,7 +132,7 @@ html {
 
 #portfolio-anchor{
   position: absolute;
-  top: 56rem;
+  top: 40rem;
 }
 
 
@@ -159,6 +159,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   height: 15%;
+  width: 100%;
 }
 
 .nav-logo {
