@@ -112,7 +112,6 @@
   }
 
   #contact {
-    position: relative;
     height: 100%;
     background-attachment: scroll; 
   }
@@ -163,7 +162,7 @@
   }
 
   #louder{
-    top: 10rem;
+    top: 12rem;
   }
 
   .project{
