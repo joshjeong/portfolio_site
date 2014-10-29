@@ -1,7 +1,7 @@
 $(document).on('ready', function () {
-  var pokemonView = new pView();
-      pokemonController = new pController(pokemonView);
-      view= new View;
+  var pokemonView = new pView(),
+      pokemonController = new pController(pokemonView),
+      view= new View,
       controller = new Controller(view);
   $(document).on('keyup', function(e){
     pokemonController.bindkeys(e);
@@ -10,24 +10,20 @@ $(document).on('ready', function () {
   view.animateArrow();
   if ($('#trigger').css('opacity')== "0"){
      var s = skrollr.init({
-            render: function(data){
-              console.log(data.curTop)
-            }
+        render: function(data){
+          console.log(data.curTop)
+        }
      });
   }
-
-
 })
 
 
-
-
-
 var Controller = function(view){
-  self = this
-  this.view = view
+  this.view = view;
+}
 
-  this.scrollTo = function(){
+Controller.prototype = {
+  scrollTo: function(){
     if($(window).scrollTop() + $(window).height() >= $(document).height() - 500) {
        var _pos = $(window).scrollTop() + $(window).height() - $(document).height() - 500;
         $("#header").css({
@@ -49,33 +45,36 @@ var Controller = function(view){
         }
       });
     });
-  }
+  },
 
-  this.bindListeners= function(){
+  bindListeners: function(){
     this.louderListener();
     this.ledgerListener();
     this.playlistenListener();
-  }
+  },
 
-  this.louderListener= function(){
+  louderListener: function(){
+    var self = this;
     $('#louder').on('mouseover', function(){
       self.view.showLouder($(this))
     });
     $('#louder').on('mouseout', function(){
       self.view.hideLouder($(this))
     })
-  }
+  },
 
-  this.ledgerListener= function(){
+  ledgerListener: function(){
+    var self = this;
     $('#ledger').on('mouseover', function(){
       self.view.showLedger($(this))
     });
     $('#ledger').on('mouseout', function(){
       self.view.hideLedger($(this))
     })
-  }
+  },
 
-  this.playlistenListener= function(){
+  playlistenListener: function(){
+    var self = this;
     $('#playlisten').on('mouseover', function(){
       self.view.showPlaylisten($(this))
     });
@@ -83,41 +82,44 @@ var Controller = function(view){
       self.view.hidePlaylisten($(this))
     })
   }
+};
 
+var View = function(){}
 
-}
-
-var View = function(){
-  this.animateArrow= function(){
+View.prototype = {
+  animateArrow: function(){
     $('#arrow').animate('bounce', {times: 5}, 300);
-  };
+  },
 
-  this.showLouder = function(div){
+  showLouder: function(div){
     $('.louder-overlay').slideDown("slow")
     $('#louder-caption').show()
-  }
-  this.hideLouder = function(div){
+  },
+
+  hideLouder: function(div){
     $('.louder-overlay').slideUp("slow")
     $('#louder-caption').hide()
-  }
-  this.showLedger = function(div){
+  },
+
+  showLedger: function(div){
     $('.ledger-overlay').slideDown("slow")
     $('#ledger-caption').show()
-  }
-  this.hideLedger = function(div){
+  },
+
+  hideLedger: function(div){
     $('.ledger-overlay').slideUp("slow")
     $('#ledger-caption').hide()
-  }
-  this.showPlaylisten = function(div){
+  },
+
+  showPlaylisten: function(div){
     $('.playlisten-overlay').slideDown("slow")
     $('#playlisten-caption').show()
-  }
-  this.hidePlaylisten = function(div){
+  },
+
+  hidePlaylisten: function(div){
     $('.playlisten-overlay').slideUp("slow")
     $('#playlisten-caption').hide()
   }
-
-
-}
+};
 
 
