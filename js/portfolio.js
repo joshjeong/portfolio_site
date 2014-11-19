@@ -1,7 +1,6 @@
 $(document).on('ready', function () {
-  var pokemonView = new pView(),
-      pokemonController = new pController(pokemonView),
-      view= new View,
+  var pokemonController = new Pokemon.Controller,
+      view = new View,
       controller = new Controller(view);
   $(document).on('keyup', function(e){
     pokemonController.bindkeys(e);
